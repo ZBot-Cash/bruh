@@ -27,11 +27,7 @@ tl.TextStrokeTransparency = 0
 tl.TextColor3 = Color3.new(1, 1, 1)
 tl.TextStrokeColor3 = Color3.new(0, 0, 0)
 tl.TextSize = 8
-genv.watermark = {
-    text = {" Velocity ", "DEV", game.Players.LocalPlayer.Name .. " | Version: 1.3.7", "00:00:00"},
-    color = Color3.fromRGB(198, 126, 224),
-    separator = "  |  "
-}
+
 game:GetService("RunService").Heartbeat:Connect(
     function()
         watermark.text[4] = os.date("%X", os.time())
